@@ -6,13 +6,24 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --gray-800: #606060;
+  --gray-600: #979797;
+  --gray-400: #dedede;
+  --gray-200: #f5f5f5;
+
+  --primary-800: #007444;
+  --primary-600: #00975d;
+  --primary-400: #0cb37e;
+  --primary-200: #89d1b2;
+ 
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 63, 67, 71;
+    --background-end-rgb: 63, 67, 71;
   }
 }
 
