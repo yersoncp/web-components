@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import s from "./BlockInsight.module.css";
 import { Stack, Text } from '@/components';
-import { ArrowRightUp } from '@/components/Icons';
+import { ArrowRightUp } from '@/components/Iconos';
 
 type InsightItemProps = {
   percent: number
