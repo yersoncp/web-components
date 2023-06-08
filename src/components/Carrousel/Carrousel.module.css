@@ -1,0 +1,44 @@
+/* Slides */
+.sliderContainer {
+  margin-bottom: 3rem;
+}
+
+.slide {
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.slideInactive {
+  height: 0;
+  opacity: 0;
+  transform: translateY(-40px);
+}
+
+.slideActive {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dots */
+.dotsContainer {
+  gap: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.dotClicable {
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.dot {
+  width: 36px;
+  height: 3px;
+  background: var(--gray-800);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.active {
+  background: var(--gray-200);
+}

@@ -1,0 +1,66 @@
+.container {
+  position: relative;
+  z-index: 99;
+}
+
+/* Button */
+.button {
+  border-radius: 24px;
+  border: 1px solid var(--gray-800);
+  padding: .25rem .75rem;
+  font-size: 13px;
+  transition: all .3s;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.button:hover {
+  border: 1px solid var(--primary-800);
+}
+
+.arrowDown {
+  margin-bottom: .2rem;
+  margin-left: .5rem;
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+/* Options` */
+.options {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border-radius: 8px;
+  margin-top: 4px;
+  width: 100%;
+  text-align: left;
+  background: var(--black-800);
+  font-size: 12px;
+  transition: all .3s;
+  height: 0;
+  opacity: 0;
+}
+
+.options.active {
+  height: auto;
+  padding: .25rem 0;
+  opacity: 1;
+}
+
+.optionLink {
+  padding: .5rem 1rem;
+  display: block;
+  color: var(--gray-600);
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.optionLink:hover{
+  color: var(--gray-200);
+}

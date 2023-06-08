@@ -1,50 +1,39 @@
 import React, { ReactNode } from 'react';
 import s from "./BlockInsight.module.css";
-import { Stack, Text } from '@/components';
-import { ArrowRightUp } from '@/components/icons';
+import { Button, Carrousel, Stack, Text } from '@/components';
+import InsightItem from './InsightItem';
 
 const BlockInsight = () => {
   return (
     <div className={s.container}>
       <Stack gap={8}>
         <Stack direction='row' align='center' justify='space-between'>
-          <div>
-            <Text>
-              Insigth
-            </Text>
-          </div>
+          <Text>Insigth</Text>
           <div>
             <Stack direction='row' gap={1}>
-              <button className={s.button}>
-                This week
-                <i className={s.arrowDown}></i>
-              </button>
-              <button className={s.button}>…</button>
+              <Button
+                options={['This month', 'This year']}
+                showArrow={true}
+              >This week</Button>
             </Stack>
           </div>
         </Stack>
 
-        <Stack gap={2} direction='row'>
-          <span className={s.percent}>89%</span>
-          <span className={s.icon}>
-            <ArrowRightUp width={18} />
-          </span>
-        </Stack>
+        <Carrousel>
+          <InsightItem
+            percent={89}
+            title1='Increase in your revenue'
+            title2='by end oh this month is forecasted'
+            subtitle='Harver is about to recieve 15k new customers which results in 78% in revenue.'
+          />
 
-        <Stack gap={4}>
-          <div>
-            <Text variant='h4' as='span' color='gray200'>
-              Increase in your revenue
-            </Text>
-            {' '}
-            <Text variant='h4' as='span' color='gray600'>
-              by end oh this month is forecasted
-            </Text>
-          </div>
-          <Text variant='body' color='gray600'>
-            Harver is about to recieve 15k new customers which results in 78% in revenue.
-          </Text>
-        </Stack>
+          <InsightItem
+            percent={37}
+            title1='Increase in the number of visitors'
+            title2='is expected in the last 30 days'
+            subtitle='Harver is about to receive 35k new visitors to its website which is a 68% increase.'
+          />
+        </Carrousel>
 
       </Stack>
     </div>
