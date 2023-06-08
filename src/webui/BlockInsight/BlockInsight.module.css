@@ -2,15 +2,15 @@
   width: 100%;
   max-width: 380px;
   padding: 2rem;
-  background: #222;
+  background: #1a1a1b;
   border-radius: 24px;
   font-weight: 200;
 
   /* bg */
   background: hsla(155, 67%, 15%, 1);
-  background: linear-gradient(-45deg, hsla(155, 67%, 15%, 1) 0%, rgb(21, 21, 22) 36%);
-  background: -moz-linear-gradient(-45deg, hsla(155, 67%, 15%, 1) 0%, rgb(19, 18, 18) 36%);
-  background: -webkit-linear-gradient(-45deg, hsla(155, 67%, 15%, 1) 0%, hsla(19, 18, 18) 36%);
+  background: linear-gradient(-45deg, rgb(87, 53, 11) 0%, rgb(21, 21, 22) 36%);
+  background: -moz-linear-gradient(-45deg, rgb(87, 53, 11)  0%, rgb(19, 18, 18) 36%);
+  background: -webkit-linear-gradient(-45deg, rgb(87, 53, 11)  0%, hsla(19, 18, 18) 36%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0D422C", endColorstr="#222222", GradientType=1 );
 }
 

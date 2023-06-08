@@ -1,4 +1,4 @@
-import { BlockInsight } from '@/webui'
+import { BlockInsight, TrafficChannel } from '@/webui'
 import Image from 'next/image'
 
 export default function Home() {
@@ -10,7 +10,12 @@ export default function Home() {
           Web components
         </p>
       </div>
+
       <div className="my-12">
+        <TrafficChannel />
+      </div>
+
+      <div className="my-6">
         <BlockInsight />
       </div>
     </main>

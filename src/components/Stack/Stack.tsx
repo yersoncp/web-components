@@ -9,6 +9,7 @@ type StackProps = {
   children: ReactNode;
   fullH?: boolean;
   wrap?: boolean;
+  className?: string;
 }
 
 const Stack: FC<StackProps> = ({
@@ -19,12 +20,13 @@ const Stack: FC<StackProps> = ({
   children,
   fullH,
   wrap,
+  className,
 }) => {
   const SIZE_BASE = 6;
 
   return (
     <div
-      className={s.stack}
+      className={`${className} ${s.stack}`}
       style={{
         gap: `${gap * SIZE_BASE}px`,
         alignItems: `${align}`,
