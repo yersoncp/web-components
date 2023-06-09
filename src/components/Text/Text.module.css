@@ -21,6 +21,10 @@
   color: var(--gray-200);
 }
 
+.success {
+  color: var(--success);
+}
+
 /* Variants */
 .h1 {
   font-weight: 300;

@@ -29,36 +29,3 @@
   background: var(--gray-200);
   border-radius: 4px 4px 0 0;
 }
-
-/* Stats */
-.stats {
-  font-size: 13px;
-  color: var(--gray-800);
-}
-
-.stats::before {
-  content: "";
-  width: 16px;
-  height: 3px;
-  background: var(--gray-800);
-  border-radius: 2px;
-  display: inline-block;
-  margin-bottom: .2rem;
-  margin-right: .45rem;
-}
-
-.statsGreen::before {
-  background: #4ddbad;
-}
-.statsYellow::before {
-  background: #f8ca77;
-}
-.statsRed::before {
-  background: #f99597;
-}
-.statsBlue::before {
-  background: #7aa8fa;
-}
-.statsPink::before {
-  background: #df95fa;
-}

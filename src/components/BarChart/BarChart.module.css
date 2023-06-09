@@ -1,21 +1,42 @@
 .container {
   display: flex;
-  gap: 1.6rem;
+  gap: 1.2rem;
   align-items: flex-end;
   padding: 0 1rem;
+  margin-bottom: 2rem;
 }
 
 .bar {
-  width: 2rem;
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   border-radius: 4px 4px 0 0;
-  opacity: .65;
+  opacity: .4;
+  background: linear-gradient(0deg, #1a1a1b, var(--primary-400));
+  transition: all .5s;
+}
+
+.bar:hover {
+  opacity: .75;
+}
+
+.label {
+  font-size: 12px;
+  color: var(--gray-400);
+  margin-bottom: -2rem;
 }
 
 .value {
-  margin-bottom: -1.2rem;
-  font-size: 12px;
-  color: var(--gray-700);
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+  font-size: 11px;
+  transition: all .3s;
+  color: transparent;
+}
+
+.bar:hover .value {
+  color: var(--gray-200);
+  top: -1.2rem;
 }

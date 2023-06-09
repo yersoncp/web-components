@@ -14,33 +14,34 @@ const TrafficChannel = () => {
           <button className={s.menuLink}>Total</button>
         </div>
 
-        <Stack direction='row' className={s.body}>
-          <Stack gap={8} justify="space-between">
-            <div>
-              <Text variant="h1">47.2%</Text>
+        <Stack direction='row' className={s.body} gap={4}>
+          <div style={{ width: "35%" }}>
+            <Stack gap={8} justify="space-between">
               <div>
-                <Text variant='h5' as="span" color="gray200">6,890</Text>
-                {" "}
-                <Text variant='h5' as="span" color="gray600">increased</Text>
+                <div>
+                  <Text as="span" variant="h1">47.2%</Text>
+                  {" "}
+                  <Text as="span" color="success" weight={500}>+1.25%</Text>
+                </div>
+                <div>
+                  <Text variant='h5' as="span" color="gray200">6,890</Text>
+                  {" "}
+                  <Text variant='h5' as="span" color="gray600">increased</Text>
+                </div>
               </div>
-            </div>
 
-            <div>
-              <Text as="span" color="gray200">7 products are popular among new customer</Text>
-              {" "}
-              <Text as="span" color="gray600">consider using them is prospecting campaigns</Text>
-            </div>
-          </Stack>
+              <div>
+                <Text as="span" color="gray200">7 products are popular among new customer</Text>
+                {" "}
+                <Text as="span" color="gray600">consider using them is prospecting campaigns</Text>
+              </div>
+            </Stack>
+          </div>
+
+          <div style={{ width: "65%" }}>
+            <BarChart />
+          </div>
           
-          <BarChart />
-        </Stack>
-
-        <Stack direction='row' gap={3}>
-          <span className={`${s.stats} ${s.statsGreen}`}>Direct</span>
-          <span className={`${s.stats} ${s.statsYellow}`}>Search</span>
-          <span className={`${s.stats} ${s.statsRed}`}>Market</span>
-          <span className={`${s.stats} ${s.statsBlue}`}>Social Media</span>
-          <span className={`${s.stats} ${s.statsPink}`}>Other</span>
         </Stack>
       </Stack>
     </Card>

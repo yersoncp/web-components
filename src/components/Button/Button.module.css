@@ -16,7 +16,7 @@
 }
 
 .button:hover {
-  border: 1px solid var(--primary-800);
+  border: 1px solid var(--primary-400);
 }
 
 .arrowDown {
