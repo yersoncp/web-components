@@ -1,10 +1,10 @@
 import React, { ReactNode } from 'react';
 import s from "./TrafficChannel.module.css";
-import { BarChart, Stack, Text } from '@/components';
+import { BarChart, Card, Stack, Text } from '@/components';
 
 const TrafficChannel = () => {
   return (
-    <div className={s.container}>
+    <Card>
       <Stack gap={6}>
         <Text>Traffic Channel</Text>
 
@@ -43,7 +43,7 @@ const TrafficChannel = () => {
           <span className={`${s.stats} ${s.statsPink}`}>Other</span>
         </Stack>
       </Stack>
-    </div>
+    </Card>
   )
 };
 export default React.memo(TrafficChannel);

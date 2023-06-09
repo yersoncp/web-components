@@ -1,11 +1,11 @@
 import React, { ReactNode } from 'react';
 import s from "./BlockInsight.module.css";
-import { Button, Carrousel, Stack, Text } from '@/components';
+import { Button, Card, Carrousel, Stack, Text } from '@/components';
 import InsightItem from './InsightItem';
 
 const BlockInsight = () => {
   return (
-    <div className={s.container}>
+    <Card>
       <Stack gap={8}>
         <Stack direction='row' align='center' justify='space-between'>
           <Text>Insigth</Text>
@@ -36,7 +36,7 @@ const BlockInsight = () => {
         </Carrousel>
 
       </Stack>
-    </div>
+    </Card>
   )
 };
 export default React.memo(BlockInsight);

@@ -1,0 +1,8 @@
+.container {
+  width: 100%;
+  padding: 2rem;
+  background: #1a1a1b;
+  border-radius: 24px;
+  font-weight: 200;
+  background: var(--dark);
+}
