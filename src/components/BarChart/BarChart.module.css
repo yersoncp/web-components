@@ -2,8 +2,8 @@
   display: flex;
   gap: 1.2rem;
   align-items: flex-end;
-  padding: 0 1rem;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .bar {
@@ -39,4 +39,34 @@
 .bar:hover .value {
   color: var(--gray-200);
   top: -1.2rem;
+}
+
+/* Accesorios */
+.levelLine {
+  position: absolute;
+  border-bottom: 2px dotted var(--warning);
+  color: var(--warning);
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  padding: .25rem 0;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.levelBar {
+  border-radius: 4px 4px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-weight: bold;
+  font-size: 11px;
+  transition: all .3s;
+  text-align: center;
+  padding: .25rem;
+  font-weight: bold;
+  transition: all .3s;
+  background: var(--warning);
+  color: var(--black-800);
 }

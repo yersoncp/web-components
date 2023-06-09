@@ -1,6 +1,15 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import s from "./TrafficChannel.module.css";
 import { BarChart, Card, Stack, Text } from '@/components';
+
+const DATA = [
+  { id: 1, value: 345, label: "Direct" },
+  { id: 2, value: 277, label: "Search" },
+  { id: 3, value: 320, label: "Market" },
+  { id: 4, value: 297, label: "Social" },
+  { id: 6, value: 469, label: "Organic" },
+  { id: 5, value: 237, label: "Other" },
+]
 
 const TrafficChannel = () => {
   return (
@@ -39,7 +48,7 @@ const TrafficChannel = () => {
           </div>
 
           <div style={{ width: "65%" }}>
-            <BarChart />
+            <BarChart data={DATA} />
           </div>
           
         </Stack>

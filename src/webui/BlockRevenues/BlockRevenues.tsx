@@ -1,5 +1,21 @@
 import { BarChart, Card, Stack, Text } from "@/components";
-import s from "./BlockRevenues.module.css";
+
+const DATA = [
+  { id: 1, value: 183, label: "Jan" },
+  { id: 2, value: 189, label: "Feb" },
+  { id: 3, value: 199, label: "Mar" },
+  { id: 4, value: 205, label: "Apr" },
+  { id: 6, value: 187, label: "May" },
+  { id: 5, value: 199, label: "Jun" },
+  { id: 5, value: 189, label: "Jul" },
+  { id: 5, value: 227, label: "Ago" },
+  { id: 5, value: 240, label: "Sep" },
+  { id: 5, value: 285, label: "Oct" },
+  { id: 5, value: 320, label: "Nov" },
+  { id: 5, value: 287, label: "Dec" },
+]
+
+const LEVEL = 240
 
 const BlockRevenues = () => {
   return <>
@@ -11,7 +27,7 @@ const BlockRevenues = () => {
           {" "}
           <Text as="span" color="success" weight={500}>+45%</Text>
         </div>
-        <BarChart />
+        <BarChart data={DATA} level={LEVEL} />
       </Stack>
     </Card>
   </>

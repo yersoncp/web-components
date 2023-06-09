@@ -1,3 +1,4 @@
+import { Stack } from '@/components'
 import { BlockInsight, BlockRevenues, TrafficChannel } from '@/webui'
 import Image from 'next/image'
 

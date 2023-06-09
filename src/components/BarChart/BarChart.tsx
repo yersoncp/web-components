@@ -2,18 +2,18 @@
 import React, { ReactNode, useState } from "react";
 import s from "./BarChart.module.css";
 
-const DATA = [
-  { id: 1, value: 445, label: "Direct" },
-  { id: 2, value: 277, label: "Search" },
-  { id: 3, value: 420, label: "Market" },
-  { id: 4, value: 297, label: "Social" },
-  { id: 6, value: 469, label: "Organic" },
-  { id: 5, value: 237, label: "Other" },
-]
+type BarChartProps = {
+  data: {
+    id: number;
+    value: number;
+    label: string;
+  }[];
+  level?: number;
+}
 
-const BarChart = () => {
-  const max = Math.max(...(DATA?.map(e => e.value)));
-  const width = Math.floor(100 / DATA.length);
+const BarChart = ({ data, level }: BarChartProps) => {
+  const max = Math.max(...(data?.map(e => e.value)));
+  const width = Math.floor(100 / data.length);
 
   const getBarSize = (value: number) => {
     return (value / max) * 12;
@@ -21,7 +21,7 @@ const BarChart = () => {
 
   return <>
     <div className={s.container}>
-      {DATA.map(d => (
+      {data.map(d => (
         <div
           key={d.id}
           className={s.bar}
@@ -30,10 +30,29 @@ const BarChart = () => {
             height: `${getBarSize(d.value)}rem`
           }}
         >
+          {level && (d.value - level) > 0 && (
+            <span className={s.levelBar} style={{ height: `${getBarSize(d.value - level)}rem`}}>
+              +{d.value - level}
+            </span>
+          )}
           <span className={s.value}>{d.value}</span>
           <span className={s.label}>{d.label}</span>
         </div>
       ))}
+
+      {level && (
+        <div
+          className={s.levelLine}
+          style={{
+            bottom: `${getBarSize(level)}rem`
+          }}
+        >
+          Potential revenue:
+          {" "}
+          <b>{level}</b>
+        </div>
+      )}
+
     </div>
   </>;
 }
