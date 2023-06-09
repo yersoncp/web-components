@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  gap: 1.6rem;
+  align-items: flex-end;
+  padding: 0 1rem;
+}
+
+.bar {
+  width: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 4px 4px 0 0;
+  opacity: .65;
+}
+
+.value {
+  margin-bottom: -1.2rem;
+  font-size: 12px;
+  color: var(--gray-700);
+}

@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import s from "./TrafficChannel.module.css";
-import { Stack, Text } from '@/components';
+import { BarChart, Stack, Text } from '@/components';
 
 const TrafficChannel = () => {
   return (
@@ -15,7 +15,7 @@ const TrafficChannel = () => {
         </div>
 
         <Stack direction='row' className={s.body}>
-          <Stack gap={8}>
+          <Stack gap={8} justify="space-between">
             <div>
               <Text variant="h1">47.2%</Text>
               <div>
@@ -31,7 +31,8 @@ const TrafficChannel = () => {
               <Text as="span" color="gray600">consider using them is prospecting campaigns</Text>
             </div>
           </Stack>
-          <div></div>
+          
+          <BarChart />
         </Stack>
 
         <Stack direction='row' gap={3}>
