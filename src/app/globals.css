@@ -5,7 +5,6 @@
 :root {
   --black-800: #262626;
   --black-700: #434343;
-  --black-600: #555555;
 
   --gray-800: #606060;
   --gray-700: #818181;
@@ -18,12 +17,13 @@
   --success: #4dc08d;
   --warning: #e3bb6e;
 
-  --dark: #1a1a1b;
+  --dark: #1c1c1e;
+  --bg: #0b0b0c;
 }
 
 body {
   color: var(--gray-200);
-  background: var(--black-800);
+  background: var(--bg);
 }
 
 
