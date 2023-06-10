@@ -25,3 +25,16 @@ body {
   color: var(--gray-200);
   background: var(--black-800);
 }
+
+
+.grid2 {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+}
+
+.grid3 {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
