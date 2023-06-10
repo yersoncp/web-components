@@ -1,6 +1,4 @@
-import { Stack } from '@/components'
-import { BlockInsight, BlockRevenues, TrafficChannel } from '@/webui'
-import Image from 'next/image'
+import { BlockInsight, BlockRevenues, LiveOpportunities, TrafficChannel } from '@/webui'
 
 export default function Home() {
   return (
@@ -19,6 +17,7 @@ export default function Home() {
 
       <div className="mb-6 grid3">
         <BlockInsight />
+        <LiveOpportunities />
       </div>
 
     </main>

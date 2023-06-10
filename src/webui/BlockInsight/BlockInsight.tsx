@@ -3,7 +3,7 @@ import s from "./BlockInsight.module.css";
 import { Button, Card, Carrousel, Stack, Text } from '@/components';
 import InsightItem from './InsightItem';
 
-const BlockInsight = () => {
+export const BlockInsight = () => {
   return (
     <Card>
       <Stack gap={8}>
@@ -39,4 +39,3 @@ const BlockInsight = () => {
     </Card>
   )
 };
-export default React.memo(BlockInsight);

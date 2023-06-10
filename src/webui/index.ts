@@ -1,3 +1,4 @@
-export { default as BlockInsight } from './BlockInsight/BlockInsight'
-export { default as BlockRevenues } from './BlockRevenues/BlockRevenues'
-export { default as TrafficChannel } from './TrafficChannel/TrafficChannel'
+export { BlockInsight } from './BlockInsight/BlockInsight'
+export { BlockRevenues } from './BlockRevenues/BlockRevenues'
+export { LiveOpportunities } from './LiveOpportunities/LiveOpportunities'
+export { TrafficChannel } from './TrafficChannel/TrafficChannel'

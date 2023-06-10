@@ -11,7 +11,7 @@ const DATA = [
   { id: 5, value: 237, label: "Other" },
 ]
 
-const TrafficChannel = () => {
+export const TrafficChannel = () => {
   return (
     <Card>
       <Stack gap={6}>
@@ -56,4 +56,3 @@ const TrafficChannel = () => {
     </Card>
   )
 };
-export default React.memo(TrafficChannel);

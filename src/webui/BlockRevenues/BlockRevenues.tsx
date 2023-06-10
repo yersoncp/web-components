@@ -17,7 +17,7 @@ const DATA = [
 
 const LEVEL = 240
 
-const BlockRevenues = () => {
+export const BlockRevenues = () => {
   return <>
     <Card>
       <Stack gap={2}>
@@ -32,5 +32,3 @@ const BlockRevenues = () => {
     </Card>
   </>
 }
-
-export default BlockRevenues;
