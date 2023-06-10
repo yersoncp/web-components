@@ -7,7 +7,6 @@ const DATA = [
   { id: 2, value: 277, label: "Search" },
   { id: 3, value: 320, label: "Market" },
   { id: 4, value: 297, label: "Social" },
-  { id: 6, value: 469, label: "Organic" },
   { id: 5, value: 237, label: "Other" },
 ]
 
@@ -24,7 +23,7 @@ export const TrafficChannel = () => {
         </div>
 
         <Stack direction='row' className={s.body} gap={4}>
-          <div style={{ width: "35%" }}>
+          <div>
             <Stack gap={8} justify="space-between">
               <div>
                 <div>
@@ -47,7 +46,7 @@ export const TrafficChannel = () => {
             </Stack>
           </div>
 
-          <div style={{ width: "65%" }}>
+          <div>
             <BarChart data={DATA} />
           </div>
           

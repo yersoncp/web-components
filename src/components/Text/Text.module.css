@@ -25,6 +25,10 @@
   color: var(--success);
 }
 
+.danger {
+  color: var(--danger);
+}
+
 /* Variants */
 .h1 {
   font-weight: 300;

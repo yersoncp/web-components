@@ -5,7 +5,7 @@ type TextProps = {
   variant?: "h1" | "h2" | "h3" | "h4" | "h5" | "body" | "small"
   as?: "div" | "span" | "p" | "h1" | "h2" | "h3" | "h4" | "h5"
   align?: "center" | "right"
-  color?:  "gray200" | "gray400" | "gray600" | "gray800" | "success"
+  color?:  "gray200" | "gray400" | "gray600" | "gray800" | "success" | "danger"
   weight?: 300 | 400 | 500 | 600
   children: ReactNode
   className?: string

@@ -1,0 +1,15 @@
+.lineBars {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--black-800);
+  position: relative;
+}
+
+.lineBarsActive {
+  position: absolute;
+  border-radius: 4px;
+  background: var(--primary-400);
+  height: 4px;
+  width: 75%;
+  opacity: .6;
+}

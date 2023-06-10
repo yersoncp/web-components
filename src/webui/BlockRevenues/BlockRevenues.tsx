@@ -20,7 +20,7 @@ const LEVEL = 240
 export const BlockRevenues = () => {
   return <>
     <Card>
-      <Stack gap={2}>
+      <Stack gap={4}>
         <Text>Revenues</Text>
         <div>
           <Text variant="h3" as="span" weight={500}>$22.3K</Text>
@@ -28,6 +28,8 @@ export const BlockRevenues = () => {
           <Text as="span" color="success" weight={500}>+45%</Text>
         </div>
         <BarChart data={DATA} level={LEVEL} />
+
+        <Text color="gray800">Growth for the last 3 months.</Text>
       </Stack>
     </Card>
   </>
