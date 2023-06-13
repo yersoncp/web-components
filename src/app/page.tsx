@@ -1,4 +1,4 @@
-import { BlockInsight, BlockRevenues, EmergencyFounds, LiveOpportunities, TrafficChannel } from '@/webui'
+import { BlockInsight, BlockRevenues, EmergencyFounds, LiveOpportunities, PaymentHistory, TrafficChannel } from '@/webui'
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       <div className="mb-6 grid2">
         <BlockRevenues />
         <TrafficChannel />
+        <PaymentHistory />
       </div>
 
       <div className="mb-6 grid3">
