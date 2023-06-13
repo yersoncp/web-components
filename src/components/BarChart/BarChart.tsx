@@ -21,9 +21,9 @@ const BarChart = ({ data, level }: BarChartProps) => {
 
   return <>
     <div className={s.container}>
-      {data.map(d => (
+      {data.map((d, idx) => (
         <div
-          key={d.id}
+          key={idx}
           className={s.bar}
           style={{
             width: `${width}%`,
