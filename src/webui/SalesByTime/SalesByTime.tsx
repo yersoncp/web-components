@@ -97,6 +97,10 @@ export const SalesByTime = () => {
           ))}
         </div>
 
+        <Text variant="body" color="gray800">
+          Constant activity in the last {DATA.length} days
+        </Text>
+
         <Stack direction="row" gap={4}>
           <Text color="gray800" variant="body">
             <span className={s.min} /> Min
@@ -105,6 +109,7 @@ export const SalesByTime = () => {
             <span className={s.max} /> Max
           </Text>
         </Stack>
+
       </Stack>
     </Card>
   </>
