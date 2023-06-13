@@ -1,4 +1,5 @@
 export { BlockInsight } from './BlockInsight/BlockInsight'
 export { BlockRevenues } from './BlockRevenues/BlockRevenues'
+export { EmergencyFounds } from './EmergencyFounds/EmergencyFounds'
 export { LiveOpportunities } from './LiveOpportunities/LiveOpportunities'
 export { TrafficChannel } from './TrafficChannel/TrafficChannel'
