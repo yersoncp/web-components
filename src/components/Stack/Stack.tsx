@@ -26,7 +26,7 @@ const Stack: FC<StackProps> = ({
 
   return (
     <div
-      className={`${className} ${s.stack}`}
+      className={`${className || ""} ${s.stack}`}
       style={{
         gap: `${gap * SIZE_BASE}px`,
         alignItems: `${align}`,

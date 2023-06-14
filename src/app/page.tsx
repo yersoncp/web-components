@@ -3,6 +3,7 @@ import {
   BlockRevenues,
   EmergencyFounds,
   LiveOpportunities,
+  Messages,
   Notifications,
   PaymentHistory,
   SalesByTime,
@@ -31,6 +32,7 @@ export default function Home() {
         <BlockInsight />
         <LiveOpportunities />
         <Notifications />
+        <Messages />
       </div>
 
     </main>
