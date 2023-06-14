@@ -46,12 +46,12 @@ export const Notifications = () => {
 
             <Stack>
               <div>
-                <Text as="span" variant="body" weight={500}>Bessie Coope</Text>
+                <Text as="span" variant="body" weight={500}>Conrad Smith</Text>
                 {" "}
                 <Text as="span" variant="body" color="gray600">started following you</Text>
               </div>
               <div>
-                <Text as="span" variant="body" color="gray600">Just now</Text>
+                <Text as="span" variant="body" color="gray600">3 hours ago</Text>
                 {" · "}
                 <Text as="span" variant="body" color="gray600">Online</Text>
                 {" "}
@@ -68,12 +68,12 @@ export const Notifications = () => {
 
             <Stack>
               <div>
-                <Text as="span" variant="body" weight={500}>Bessie Coope</Text>
+                <Text as="span" variant="body" weight={500}>Alice Doe</Text>
                 {" "}
                 <Text as="span" variant="body" color="gray600">started following you</Text>
               </div>
               <div>
-                <Text as="span" variant="body" color="gray600">Just now</Text>
+                <Text as="span" variant="body" color="gray600">7 hours ago</Text>
                 {" · "}
                 <Text as="span" variant="body" color="gray600">Online</Text>
                 {" "}
@@ -90,12 +90,12 @@ export const Notifications = () => {
 
             <Stack>
               <div>
-                <Text as="span" variant="body" weight={500}>Bessie Coope</Text>
+                <Text as="span" variant="body" weight={500}>Nate Slow</Text>
                 {" "}
                 <Text as="span" variant="body" color="gray600">started following you</Text>
               </div>
               <div>
-                <Text as="span" variant="body" color="gray600">Just now</Text>
+                <Text as="span" variant="body" color="gray600">1 day ago</Text>
                 {" · "}
                 <Text as="span" variant="body" color="gray600">Online</Text>
                 {" "}

@@ -27,10 +27,10 @@ export default function Home() {
       </div>
 
       <div className="mb-6 grid3">
-        <Notifications />
         <EmergencyFounds />
         <BlockInsight />
         <LiveOpportunities />
+        <Notifications />
       </div>
 
     </main>
