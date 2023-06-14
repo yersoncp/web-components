@@ -1,0 +1,27 @@
+/* Menu */
+.menu {
+  border-bottom: 1px solid var(--black-700);
+}
+
+.menuLink {
+  font-size: 13px;
+  padding: .45rem .75rem;
+  color: var(--gray-700);
+  margin-bottom: -.8rem;
+  transition: all .3s;
+}
+
+.menuLinkActive,
+.menuLink:hover {
+  color: var(--gray-400);
+}
+
+.menuLinkActive::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  display: inline-block;
+  color: var(--gray-200);
+  background: var(--gray-200);
+  border-radius: 4px 4px 0 0;
+}

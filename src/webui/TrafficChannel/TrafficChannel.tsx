@@ -1,6 +1,6 @@
 import React from 'react';
 import s from "./TrafficChannel.module.css";
-import { BarChart, Card, Stack, Text } from '@/components';
+import { BarChart, Card, Stack, Tabs, Text } from '@/components';
 
 const DATA = [
   { id: 1, value: 345, label: "Direct" },
@@ -10,17 +10,19 @@ const DATA = [
   { id: 5, value: 237, label: "Other" },
 ]
 
+const MENU = [
+  { id: 1, label: "Hotline", active: true },
+  { id: 2, label: "Balance", active: false },
+  { id: 3, label: "Total", active: false },
+]
+
 export const TrafficChannel = () => {
   return (
     <Card>
       <Stack gap={6}>
         <Text>Traffic Channel</Text>
 
-        <div className={s.menu}>
-          <button className={`${s.menuLink} ${s.menuLinkActive}`}>Hotline</button>
-          <button className={s.menuLink}>Balance</button>
-          <button className={s.menuLink}>Total</button>
-        </div>
+        <Tabs menu={MENU} />
 
         <Stack direction='row' className={s.body} gap={4}>
           <div>

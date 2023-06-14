@@ -1,6 +1,7 @@
 export { BlockInsight } from './BlockInsight/BlockInsight'
 export { BlockRevenues } from './BlockRevenues/BlockRevenues'
 export { EmergencyFounds } from './EmergencyFounds/EmergencyFounds'
+export { Notifications } from './Notifications/Notifications'
 export { LiveOpportunities } from './LiveOpportunities/LiveOpportunities'
 export { PaymentHistory } from './PaymentHistory/PaymentHistory'
 export { SalesByTime } from './SalesByTime/SalesByTime'
