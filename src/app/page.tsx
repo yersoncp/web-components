@@ -9,6 +9,7 @@ import {
   SalesByTime,
   TrafficChannel,
 } from '@/webui'
+import { YouPay } from '@/webui/YouPay/YouPay'
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         <LiveOpportunities />
         <Notifications />
         <Messages />
+        <YouPay />
       </div>
 
     </main>
