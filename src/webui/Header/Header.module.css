@@ -1,0 +1,10 @@
+.header {
+  border-bottom: 1px solid var(--black-800);
+  background: var(--dark);
+  margin-bottom: .5rem;
+  padding: 1.2rem;
+}
+
+.inner {
+  padding: 0 2rem;
+}
