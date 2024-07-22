@@ -77,7 +77,7 @@ export const SalesByTime = () => {
   return <>
     <Card>
       <Stack gap={4}>
-        <Text>Sales by time</Text>
+        <Text variant="h3" weight={400}>Sales by time</Text>
 
         <Stack justify="space-between" direction="row">
           <Text color="gray800">Last {DATA.length} days</Text>

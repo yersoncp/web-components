@@ -5,7 +5,7 @@ export const LiveOpportunities = () => {
   return (
     <Card>
       <Stack gap={7}>
-        <Text>Live Opportunities</Text>
+        <Text variant="h3" weight={400}>Live Opportunities</Text>
         <div>
           <Text variant="h1" as="span">245.8K</Text>
           {" "}

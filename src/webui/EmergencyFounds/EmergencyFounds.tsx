@@ -4,7 +4,7 @@ export const EmergencyFounds = () => {
   return <>
     <Card>
       <Stack gap={6}>
-        <Text>Emergency founds</Text>
+        <Text variant="h3" weight={400}>Emergency founds</Text>
         <div>
           <Text variant="h3" as="span" weight={500}>$10.3K</Text>
           {" "}

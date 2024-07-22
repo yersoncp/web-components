@@ -6,7 +6,7 @@ export const PaymentHistory = () => {
     <Card>
       <Stack gap={4}>
         <Stack align="center" justify="space-between" direction="row">
-          <Text>Payment history</Text>
+          <Text variant="h3" weight={400}>Payment history</Text>
           <Button>See all</Button>
         </Stack>
 

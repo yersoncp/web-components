@@ -8,7 +8,7 @@ export const BlockInsight = () => {
     <Card>
       <Stack gap={8}>
         <Stack direction='row' align='center' justify='space-between'>
-          <Text>Insigth</Text>
+          <Text variant="h3" weight={400}>Insigth</Text>
           <div>
             <Stack direction='row' gap={1}>
               <Button

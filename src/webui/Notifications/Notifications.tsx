@@ -12,7 +12,7 @@ export const Notifications = () => {
   return (
     <Card>
       <Stack gap={4}>
-        <Text>Notifications</Text>
+        <Text variant="h3" weight={400}>Notifications</Text>
 
         <Tabs menu={MENU} />
 

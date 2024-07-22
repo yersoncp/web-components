@@ -12,7 +12,7 @@ export const Messages = () => {
   return (
     <Card>
       <Stack gap={4} fullH>
-        <Text>Messages</Text>
+        <Text variant="h3" weight={400}>Messages</Text>
 
         <Stack align='center' justify='center' fullH gap={4}>
           <div className={s.icon}>🙂</div>

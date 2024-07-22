@@ -20,7 +20,7 @@ export const TrafficChannel = () => {
   return (
     <Card>
       <Stack gap={6}>
-        <Text>Traffic Channel</Text>
+        <Text variant="h3" weight={400}>Traffic Channel</Text>
 
         <Tabs menu={MENU} />
 

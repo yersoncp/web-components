@@ -1,3 +1,4 @@
+import { Text } from "@/components";
 import {
   BlockInsight,
   BlockRevenues,
@@ -8,23 +9,20 @@ import {
   PaymentHistory,
   SalesByTime,
   TrafficChannel,
-} from '@/webui'
-import { Header } from '@/webui/Header/Header'
-import { YouPay } from '@/webui/YouPay/YouPay'
+} from "@/webui";
+import { Header } from "@/webui/Header/Header";
+import { YouPay } from "@/webui/YouPay/YouPay";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main className="p-6 container">
+      <main className="px-6 py-2">
         <div className="mb-6 grid2">
           <BlockRevenues />
           <TrafficChannel />
           <PaymentHistory />
           <SalesByTime />
-        </div>
-
-        <div className="mb-6 grid3">
           <EmergencyFounds />
           <BlockInsight />
           <LiveOpportunities />
@@ -34,5 +32,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }

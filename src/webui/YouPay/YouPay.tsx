@@ -12,7 +12,7 @@ export const YouPay = () => {
   return (
     <Card>
       <Stack gap={3} fullH>
-        <Text>You pay</Text>
+        <Text variant="h3" weight={400}>You pay</Text>
 
         <Stack direction="row" justify="space-between">
           <Stack gap={1}>
@@ -40,10 +40,6 @@ export const YouPay = () => {
             <Text color="gray600">= $2359.67 <Badge /></Text>
           </Stack>
           <Button>MATIC</Button>
-        </Stack>
-
-        <Stack>
-
         </Stack>
 
         <Stack gap={2}>

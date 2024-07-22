@@ -21,7 +21,7 @@ export const BlockRevenues = () => {
   return <>
     <Card>
       <Stack gap={4}>
-        <Text>Revenues</Text>
+        <Text variant="h3" weight={400}>Revenues</Text>
         <div>
           <Text variant="h3" as="span" weight={500}>$22.3K</Text>
           {" "}
